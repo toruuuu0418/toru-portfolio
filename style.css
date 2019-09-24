@@ -1,0 +1,316 @@
+<link href="https://fonts.googleapis.com/css?family=Lato:700&display=swap" rel="stylesheet">
+
+html,body{
+  height: 100%;
+  width: 100%;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium";
+  color: #222;
+}
+
+.fadeIn{
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes fadein {
+from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+header{
+  background-color: rgba(0,0,0,0.6);
+  width: 100%;
+  padding: 30px 20px 20px 20px;
+  position: fixed;
+  border-bottom: solid 2px black;
+  z-index: 10;
+
+}
+
+header li{
+  list-style: none;
+  display: inline;
+}
+
+header a{
+  color: white;
+  text-decoration: none;
+  margin-right: 30px;
+  font-size: 20px;
+}
+
+header a:hover{
+  color: white;
+  text-decoration: none;
+  border-bottom: solid 2px white;
+}
+
+
+
+
+.hiraku-open-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.offcanvas-left{
+  overflow-y:hidden;
+}
+
+.top-wrapper{
+  background-image: url(img/top-image.jpg);
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  color: white;
+  padding-top: 200px;
+  z-index: 0;
+}
+
+
+.title{
+ font-family: 'Lato', sans-serif;
+}
+
+.main-wrapper{
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.main-wrapper img{
+  height: 350px;
+}
+
+.flame{
+  display: inline-block;
+  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
+}
+
+.skill-wrapper{
+  background-color: #F8F9FA;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.skill-wrapper h3{
+  display: inline-block;
+ border-bottom: solid 2px black;
+}
+
+.skill-wrapper {
+  display: block;
+}
+
+.skill-wrapper p{
+  text-align: left;
+}
+
+.works-wrapper{
+  padding-top: 50px;
+  padding-bottom: 100px;
+  color: white;
+  background-image: url(img/practice.jpg);
+  min-height: 200px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.works-wrapper a{
+  display: inline-block;
+  padding: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  border: solid 2px white;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.works-wrapper a:hover{
+  background-color: white;
+  color: black;
+}
+
+.example-wrapper{
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.example-text{
+  font-size: 15px;
+}
+
+.example-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.example{
+  width: 50%;
+}
+
+.example img{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.price-wrapper{
+    background-color: #EEEEEE;
+    padding-top: 100px;
+}
+
+.price-table{
+  margin: 0 auto;
+}
+
+table{
+  margin: 0 auto;
+  width: 70%;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+
+th,td{
+  border:solid 1px #aaaaaa;
+}
+
+table th{
+  padding : 20px 10px;
+  width: 30%;
+  background-color: #D3DEF1;
+}
+
+table td{
+  padding : 20px 10px;
+  width: 70%;
+}
+
+.hobby-wrapper{
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+
+.contact-wrapper{
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-color: #F8F9FA;
+}
+
+
+@media (max-width: 768px) {
+
+  .top-wrapper{
+    background-image: url(img/top-image-mob.jpg);
+    padding-top: 150px;
+  }
+
+ .main-wrapper{
+   padding-top: 50px;
+   padding-bottom: 50px;
+ }
+
+ .main-wrapper h3{
+   text-align: center;
+   margin-top: 30px;
+ }
+ .main-wrapper h5{
+   text-align: center;
+   margin-bottom: 30px;
+ }
+
+ .main-wrapper p{
+   text-align: center;
+ }
+
+ .skill{
+   margin-top: 50px;
+   margin-bottom: 50px;
+ }
+
+ .skill p{
+   text-align: center;
+ }
+
+
+}
+
+
+@media (max-width: 768px) {
+
+  .hiraku-open-btn {
+    display: block;
+  }
+
+ #nav{
+   display: none;
+ }
+
+  .top-wrapper{
+    background-image: url(img/top-image-mob.jpg);
+    padding-top: 150px;
+  }
+
+ .main-wrapper{
+   padding-top: 50px;
+   padding-bottom: 50px;
+ }
+
+ .main-wrapper h3{
+   text-align: center;
+   margin-top: 30px;
+ }
+ .main-wrapper h5{
+   text-align: center;
+   margin-bottom: 30px;
+ }
+
+ .main-wrapper p{
+   text-align: center;
+ }
+
+ .skill{
+   margin-top: 50px;
+   margin-bottom: 50px;
+ }
+
+ .skill p{
+   text-align: center;
+ }
+
+
+}
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
